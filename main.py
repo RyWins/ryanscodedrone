@@ -237,6 +237,7 @@ class tricks:
         my_drone.close()
 
 
+
 dronetricks = tricks()
 
 
@@ -244,10 +245,53 @@ dronetricks = tricks()
 
 
 
+
+
+class obsticlecourse:
+
+
+
+     def courseone(self):
+
+         my_drone.pair()
+
+         my_drone.takeoff()
+
+         power = 34
+
+         my_drone.set_throttle(-44.425)
+
+         my_drone.move(1.425)
+
+         my_drone.set_throttle(0)
+
+         my_drone.set_pitch(power)
+
+         my_drone.move(3.45)
+
+         my_drone.set_pitch(0)
+
+         my_drone.land()
+
+         my_drone.close()
+
+
+course = obsticlecourse()
+
 if __name__ == '__main__':
 
 
- dronetricks.triangle()
-
+ course.courseone()
 
     # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+
+
+
+
+
+
+
+
+
